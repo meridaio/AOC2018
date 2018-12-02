@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$USER_HOME$/IdeaProjects/AOC2018-scala/target/scala-2.12/src_managed/main" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$USER_HOME$/IdeaProjects/AOC2018-scala/target/scala-2.12/src_managed/test" isTestSource="true" generated="true" />
+      <excludeFolder url="file://$USER_HOME$/IdeaProjects/AOC2018-scala/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="scala-sdk-2.12.7" level="application" />
+  </component>
+</module>
