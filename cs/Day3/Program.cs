@@ -12,13 +12,14 @@ namespace Day3
             List<string> lines = System.IO.File.ReadAllLines(args[0]).ToList();
             Day3 day3 = new Day3(lines);
             day3.Part1();
+            day3.Part2();
         }
 
     }
 
     class Day3
     {
-        private List<string> lines;
+        private readonly List<string> lines;
         public Day3(List<string> lines)
         {
             this.lines = lines;
@@ -34,6 +35,39 @@ namespace Day3
             Console.WriteLine(count);
         }
 
+        public void Part2()
+        {
+            int[,] map = GenerateOverlapMap();
+            int untouched = FindUntouchedRectangle(map);
+            Console.WriteLine(untouched);
+        }
+
+        public int FindUntouchedRectangle(int[,] map)
+        {
+            int id = 0;
+            foreach(var line in lines)
+            {
+                Rectangle rect = new Rectangle(line);
+                Action loop = delegate
+                {
+                    foreach (int i in Enumerable.Range(0, rect.Width))
+                    {
+                        foreach (int j in Enumerable.Range(0, rect.Height))
+                        {
+                            if (map[rect.Position.Item1 + i, rect.Position.Item2 + j] > 1)
+                            {
+                                return;
+                            }
+                        }
+                    }
+                    id = rect.Id;
+                };
+                loop();
+            }
+            return id;
+        }
+
+
         public int[,] GenerateOverlapMap()
         {
             int[,] map = new int[1000, 1000];
@@ -44,7 +78,10 @@ namespace Day3
                 {
                     foreach(int j in Enumerable.Range(0, rect.Height))
                     {
-                        map[rect.Position.Item1 + i, rect.Position.Item2 + j] += 1;
+                        if ((map[rect.Position.Item1 + i, rect.Position.Item2 + j] += 1) > 1)
+                        {
+
+                        }
                     }
                 }
             }
