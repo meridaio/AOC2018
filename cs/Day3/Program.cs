@@ -48,7 +48,7 @@ namespace Day3
             foreach(var line in lines)
             {
                 Rectangle rect = new Rectangle(line);
-                Action loop = delegate
+                void loop()
                 {
                     foreach (int i in Enumerable.Range(0, rect.Width))
                     {
@@ -61,7 +61,7 @@ namespace Day3
                         }
                     }
                     id = rect.Id;
-                };
+                }
                 loop();
             }
             return id;
