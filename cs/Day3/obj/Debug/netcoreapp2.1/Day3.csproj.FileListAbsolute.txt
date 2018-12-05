@@ -1,0 +1,11 @@
+C:\Users\Nathan\source\repos\AOC2018\cs\Day3\bin\Debug\netcoreapp2.1\Day3.deps.json
+C:\Users\Nathan\source\repos\AOC2018\cs\Day3\bin\Debug\netcoreapp2.1\Day3.runtimeconfig.json
+C:\Users\Nathan\source\repos\AOC2018\cs\Day3\bin\Debug\netcoreapp2.1\Day3.runtimeconfig.dev.json
+C:\Users\Nathan\source\repos\AOC2018\cs\Day3\bin\Debug\netcoreapp2.1\Day3.dll
+C:\Users\Nathan\source\repos\AOC2018\cs\Day3\bin\Debug\netcoreapp2.1\Day3.pdb
+C:\Users\Nathan\source\repos\AOC2018\cs\Day3\obj\Debug\netcoreapp2.1\Day3.csprojAssemblyReference.cache
+C:\Users\Nathan\source\repos\AOC2018\cs\Day3\obj\Debug\netcoreapp2.1\Day3.csproj.CoreCompileInputs.cache
+C:\Users\Nathan\source\repos\AOC2018\cs\Day3\obj\Debug\netcoreapp2.1\Day3.AssemblyInfoInputs.cache
+C:\Users\Nathan\source\repos\AOC2018\cs\Day3\obj\Debug\netcoreapp2.1\Day3.AssemblyInfo.cs
+C:\Users\Nathan\source\repos\AOC2018\cs\Day3\obj\Debug\netcoreapp2.1\Day3.dll
+C:\Users\Nathan\source\repos\AOC2018\cs\Day3\obj\Debug\netcoreapp2.1\Day3.pdb

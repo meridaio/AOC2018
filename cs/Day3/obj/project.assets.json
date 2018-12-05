@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nathan\\source\\repos\\AOC2018\\cs\\AOC2018-cs\\AOC2018-cs.csproj",
-      "projectName": "AOC2018-cs",
-      "projectPath": "C:\\Users\\Nathan\\source\\repos\\AOC2018\\cs\\AOC2018-cs\\AOC2018-cs.csproj",
+      "projectUniqueName": "C:\\Users\\Nathan\\source\\repos\\AOC2018\\cs\\Day3\\Day3.csproj",
+      "projectName": "Day3",
+      "projectPath": "C:\\Users\\Nathan\\source\\repos\\AOC2018\\cs\\Day3\\Day3.csproj",
       "packagesPath": "C:\\Users\\Nathan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nathan\\source\\repos\\AOC2018\\cs\\AOC2018-cs\\obj\\",
+      "outputPath": "C:\\Users\\Nathan\\source\\repos\\AOC2018\\cs\\Day3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
