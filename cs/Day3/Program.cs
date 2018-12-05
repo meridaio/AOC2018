@@ -36,7 +36,6 @@ namespace Day3
 
         public int[,] GenerateOverlapMap()
         {
-            //List<List<int>> map = Enumerable.Repeat(Enumerable.Repeat(0, 1000).ToList(), 1000).ToList();
             int[,] map = new int[1000, 1000];
             foreach(var line in lines)
             {
