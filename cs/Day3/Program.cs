@@ -20,10 +20,12 @@ namespace Day3
     class Day3
     {
         private readonly List<string> lines;
+
         public Day3(List<string> lines)
         {
             this.lines = lines;
         }
+
         public void Part1()
         {
             var count = GenerateOverlapMap()
@@ -38,16 +40,16 @@ namespace Day3
         public void Part2()
         {
             int[,] map = GenerateOverlapMap();
-            int untouched = FindUntouchedRectangle(map);
+            int untouched = FindUntouchedClaim(map);
             Console.WriteLine(untouched);
         }
 
-        public int FindUntouchedRectangle(int[,] map)
+        private int FindUntouchedClaim(int[,] map)
         {
             int id = 0;
             foreach(var line in lines)
             {
-                Rectangle rect = new Rectangle(line);
+                Claim rect = new Claim(line);
                 void loop()
                 {
                     foreach (int i in Enumerable.Range(0, rect.Width))
@@ -67,13 +69,12 @@ namespace Day3
             return id;
         }
 
-
-        public int[,] GenerateOverlapMap()
+        private int[,] GenerateOverlapMap()
         {
             int[,] map = new int[1000, 1000];
             foreach(var line in lines)
             {
-                Rectangle rect = new Rectangle(line);
+                Claim rect = new Claim(line);
                 foreach(int i in Enumerable.Range(0, rect.Width))
                 {
                     foreach(int j in Enumerable.Range(0, rect.Height))
@@ -89,9 +90,9 @@ namespace Day3
         }
     }
 
-    class Rectangle
+    class Claim
     {
-        public Rectangle(string line)
+        public Claim(string line)
         {
             var matches = Regex.Match(line, @"^\#(\d+)\ \@\ (\d+)\,(\d+)\:\ (\d+)x(\d+)$");
             Id = int.Parse(matches.Groups[1].Value);
