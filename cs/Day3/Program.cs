@@ -25,10 +25,7 @@ namespace Day3
         }
         public void Part1()
         {
-            var map = GenerateOverlapMap();
-            var q = from int item in map
-                    select item;
-            var count = map
+            var count = GenerateOverlapMap()
                 .Cast<int>().ToList()
                 .Aggregate(
                     0, 
