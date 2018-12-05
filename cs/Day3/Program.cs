@@ -79,7 +79,7 @@ namespace Day3
                 {
                     foreach(int j in Enumerable.Range(0, rect.Height))
                     {
-                        if ((map[rect.Position.Item1 + i, rect.Position.Item2 + j] += 1) > 1)
+                        if ((map[rect.Position.x + i, rect.Position.y + j] += 1) > 1)
                         {
 
                         }
@@ -101,7 +101,7 @@ namespace Day3
             Height = int.Parse(matches.Groups[5].Value);
         }
         public int Id { get; }
-        public (int, int) Position { get; }
+        public (int x, int y) Position { get; }
         public int Width { get; }
         public int Height { get; }
     }
