@@ -20,10 +20,10 @@ object day2 {
     twocount * threecount
   }
 
-  def part2(implicit lines: Seq[String]): String ={
-    for {
-      Seq(one, two) <- lines.combinations(2)
-      common = one.zip(two).filter({ case (c1, c2) => c1 == c2 }).map(_._1)
-    }
-  }
+//  def part2(implicit lines: Seq[String]): String ={
+//    for {
+//      Seq(one, two) <- lines.combinations(2)
+//      common = one.zip(two).filter({ case (c1, c2) => c1 == c2 }).map(_._1)
+//    }
+//  }
 }
