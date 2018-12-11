@@ -26,14 +26,9 @@ object day5 {
 
   def part2(implicit input: String): Int = {
     val arr = input.filter(_ >= ' ').toBuffer
-    val alphabet = 'A' to 'Z'
-    var smallest = input.length
-    alphabet.foreach(letter => {
-      val proc: String = arr.filter(c => c != letter && c != letter.toLower).mkString("")
-      val stripped = part1(proc)
-      if (stripped < smallest)
-        smallest = stripped
-    })
-    smallest
+    ('A' to 'Z')
+      .map(letter => arr.filter(c => c != letter && c != letter.toLower))
+      .map(buffer => part1(buffer.mkString("")))
+      .min
   }
 }
